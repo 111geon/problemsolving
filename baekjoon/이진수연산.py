@@ -1,0 +1,10 @@
+def con(c):
+  return bin(c)[2:].zfill(10**5)
+mask = int("1"*100000, 2)
+a = int(input(), 2)
+b = int(input(), 2)
+print(con(a&b))
+print(con(a|b))
+print(con(a^b))
+print(con(mask^a))
+print(con(mask^b))
