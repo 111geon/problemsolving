@@ -1,16 +1,20 @@
 import sys; input = sys.stdin.readline
 
 def main():
-    string = input()
-    temp = 0
     answer = 0
-    for i in range(len(string)):
-        if string[i] == '+':
-            answer += int(string[temp:i])
-        elif string[i] == '-':
-            answer -= int(string[temp:i])
-        temp = i
+    s = "+" + input() + "+"
+    i, j = 0, 1
+    flip = 1
+    while (j < len(s)):
+        while (s[j] not in ("+", "-")): 
+            j += 1
+        if s[i] == "+":
+            answer += flip * int(s[i:j])
+        else:
+            flip = -1
+            answer += int(s[i:j])
+        i = j
+        j += 1
     print(answer)
 
 main()
-
