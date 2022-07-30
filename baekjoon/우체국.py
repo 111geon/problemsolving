@@ -2,28 +2,22 @@ import sys; input = sys.stdin.readline
 
 def main():
     N = int(input())
-    X = []
-    A = []
+    towns = []
+    people = 0
 
     for _ in range(N):
         x, a = map(int, input().split())
-        X.append(x)
-        A.append(a)
+        towns.append((x, a))
+        people += a
 
-    answer = sys.maxsize
-    pos = sys.maxsize
+    towns.sort(key=lambda x: x[0])
+    mid = people / 2
+
+    temp = 0
     for i in range(N):
-        temp = 0
-        for j in range(N):
-            temp += abs(X[i]-X[j]) * A[j]
-
-        if temp < answer:
-            pos = X[i]
-            answer = temp
-        
-        if temp == answer:
-            pos = min(pos, X[i])
-
-    print(pos)
+        temp += towns[i][1]
+        if temp >= mid:
+            print(towns[i][0])
+            break
 
 main()
