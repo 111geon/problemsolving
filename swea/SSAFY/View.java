@@ -1,8 +1,8 @@
-package swea.SSAFY.day1_view;
+package swea.SSAFY;
 
 import java.util.Scanner;
 
-public class Solution {
+public class View {
     private static Scanner sc = new Scanner(System.in);
 
     public static void main(String[] args) throws Exception {
