@@ -1,4 +1,4 @@
-package ps.공통조상;
+package 공통조상;
 
 import java.io.BufferedReader;
 import java.io.IOException;

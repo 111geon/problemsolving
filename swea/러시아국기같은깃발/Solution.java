@@ -1,4 +1,4 @@
-package ps.러시아국기같은깃발;
+package 러시아국기같은깃발;
 
 import java.io.BufferedReader;
 import java.io.IOException;

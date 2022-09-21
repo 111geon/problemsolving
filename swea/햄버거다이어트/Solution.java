@@ -1,4 +1,4 @@
-package ps.햄버거다이어트;
+package 햄버거다이어트;
 
 import java.io.BufferedReader;
 import java.io.IOException;

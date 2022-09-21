@@ -1,4 +1,4 @@
-package ps.기지국;
+package 기지국;
 
 import java.io.BufferedReader;
 import java.io.IOException;

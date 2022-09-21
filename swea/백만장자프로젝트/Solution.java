@@ -1,4 +1,4 @@
-package ps.day0825.백만장자프로젝트;
+package 백만장자프로젝트;
 
 import java.io.BufferedReader;
 import java.io.IOException;

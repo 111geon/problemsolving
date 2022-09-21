@@ -1,4 +1,4 @@
-package ps.day0825.원재의메모리복구하기;
+package 원재의메모리복구하기;
 
 import java.io.BufferedReader;
 import java.io.IOException;

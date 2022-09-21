@@ -1,12 +1,13 @@
-package swea.SSAFY;
+package 요세푸스;
+
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
 public class 요세푸스 {
+  private static Scanner sc = new Scanner(System.in);
   public static void main(String[] args) {
-    Scanner sc = new Scanner(System.in);
     int n = sc.nextInt();
     int k = sc.nextInt();
 

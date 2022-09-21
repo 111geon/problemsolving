@@ -1,4 +1,4 @@
-package ps.중위순회;
+package 중위순회;
 
 import java.io.BufferedReader;
 import java.io.IOException;

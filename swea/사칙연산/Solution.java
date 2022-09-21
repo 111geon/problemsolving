@@ -1,4 +1,4 @@
-package ps.사칙연산;
+package 사칙연산;
 
 import java.io.BufferedReader;
 import java.io.IOException;

@@ -1,4 +1,4 @@
-package ps.폭탄뭐시기;
+package 폭탄뭐시기;
 
 import java.io.BufferedReader;
 import java.io.IOException;

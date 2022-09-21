@@ -1,5 +1,3 @@
-package swea.SSAFY;
-
 public class LinkedList {
     public Node root;
     public Node end;

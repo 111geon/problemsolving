@@ -1,4 +1,4 @@
-package ps.숫자배열회전;
+package 숫자배열회전;
 
 import java.io.BufferedReader;
 import java.io.IOException;

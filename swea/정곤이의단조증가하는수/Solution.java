@@ -1,4 +1,4 @@
-package ps.정곤이의단조증가하는수;
+package 정곤이의단조증가하는수;
 
 import java.io.BufferedReader;
 import java.io.IOException;

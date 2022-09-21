@@ -1,4 +1,4 @@
-package swea.SSAFY;
+
 
 import java.util.Scanner;
 

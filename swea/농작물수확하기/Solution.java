@@ -1,4 +1,4 @@
-package ps.농작물수확하기;
+package 농작물수확하기;
 
 import java.io.BufferedReader;
 import java.io.IOException;

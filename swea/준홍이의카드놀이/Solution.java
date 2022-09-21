@@ -1,4 +1,4 @@
-package ps.준홍이의카드놀이;
+package 준홍이의카드놀이;
 
 import java.io.BufferedReader;
 import java.io.IOException;

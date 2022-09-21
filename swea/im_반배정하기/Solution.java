@@ -1,4 +1,4 @@
-package im;
+package im_반배정하기;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;

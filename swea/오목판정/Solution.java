@@ -1,4 +1,4 @@
-package ps.오목판정;
+package 오목판정;
 
 import java.io.BufferedReader;
 import java.io.IOException;

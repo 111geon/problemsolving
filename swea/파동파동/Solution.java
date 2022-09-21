@@ -1,4 +1,4 @@
-package ps.파동파동;
+package 파동파동;
 
 import java.io.BufferedReader;
 import java.io.IOException;

@@ -1,4 +1,4 @@
-package ps.스도쿠검증;
+package 스도쿠검증;
 
 import java.io.BufferedReader;
 import java.io.IOException;

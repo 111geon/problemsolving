@@ -1,4 +1,4 @@
-package ps;
+
 
 import java.util.Scanner;
 

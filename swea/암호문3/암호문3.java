@@ -1,4 +1,5 @@
-package ps.암호문3;
+package 암호문3;
+
 
 import java.io.BufferedReader;
 import java.io.IOException;

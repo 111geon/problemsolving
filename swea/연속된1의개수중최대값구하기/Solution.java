@@ -1,4 +1,4 @@
-package ps.연속된1의개수중최대값구하기;
+package 연속된1의개수중최대값구하기;
 
 import java.io.BufferedReader;
 import java.io.IOException;

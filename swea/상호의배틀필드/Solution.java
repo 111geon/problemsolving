@@ -1,4 +1,4 @@
-package ps.day0825.상호의배틀필드;
+package 상호의배틀필드;
 
 import java.io.BufferedReader;
 import java.io.IOException;
