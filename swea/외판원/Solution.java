@@ -66,9 +66,7 @@ public class Solution {
     for (int i = 2; i < n+2; i++) {
       if ((visited & 1 << i) > 0) continue;
       score += graph[start][i];
-      visited = visited | 1 << i;
-      solve(i, depth+1, visited, score);
-      visited = visited ^ 1 << i;
+      solve(i, depth+1, visited | 1 << i, score);
       score -= graph[start][i];
     }
   }

@@ -47,6 +47,7 @@ public class Solution {
     if (d == 2 && l[2] > l[0]) return;
     if (d == 3 && l[0] != l[2]) return;
     if (d > 3) return;
+    if (d == 2 && 2 * (l[0] + l[1]) < ans) return;
 
     visited[deserts[x][y]] = true;
     l[d]++;
