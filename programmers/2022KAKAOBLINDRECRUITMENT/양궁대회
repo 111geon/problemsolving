@@ -1,0 +1,28 @@
+answer = [-1]
+max_diff = 0
+max_idx = 0
+
+def solution(n, info):
+    dfs(info, n, 0, 0, 0, [], 0)
+    if max_diff == 0: return [-1]
+    return answer
+
+def dfs(info, n, idx, score_ryan, score_apeach, result, highest_idx):
+    global max_diff, answer, max_idx
+    if n == 0 and score_ryan - score_apeach < max_diff: return
+    if idx == 10:
+        if score_ryan - score_apeach >= max_diff:
+            if score_ryan - score_apeach == max_diff and highest_idx < max_idx:
+                return
+            max_diff = score_ryan - score_apeach
+            answer = result[:] + [n]
+            max_idx = highest_idx
+        return
+    if n > info[idx]: 
+        dfs(info, n - info[idx] - 1, idx + 1, score_ryan + 10 - idx, score_apeach, result + [info[idx]+1], idx)
+    if info[idx] == 0:
+        dfs(info, n, idx + 1, score_ryan, score_apeach, result + [0], highest_idx)
+    else:
+        dfs(info, n, idx + 1, score_ryan, score_apeach + 10 - idx, result + [0], highest_idx)
+
+print(solution(3, [0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0]))
