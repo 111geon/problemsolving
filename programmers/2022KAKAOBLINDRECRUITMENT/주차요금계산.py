@@ -32,3 +32,8 @@ def solution(fees, records):
         answer.append(money)
     
     return answer
+
+"""
+- 문자열 처리 + 해시
+- 딕셔너리에 총 주차한 분을 저장하고 규칙대로 요금을 계산한다.
+"""

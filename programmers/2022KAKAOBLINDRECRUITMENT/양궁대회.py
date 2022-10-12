@@ -25,4 +25,10 @@ def dfs(info, n, idx, score_ryan, score_apeach, result, highest_idx):
     else:
         dfs(info, n, idx + 1, score_ryan, score_apeach + 10 - idx, result + [0], highest_idx)
 
-print(solution(3, [0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0]))
+"""
+- dfs
+- 가장 높은 점수부터 화살 한개를 더 넣어서 점수를 얻거나 아예 포기하거나를 선택
+    - 화살 한개를 더 넣을 수 있을 때만 넣도록 조건을 써야할 것
+    - 점수를 포기하는 경우 둘다 점수를 얻지 못하는 상황을 고려해야할 것.
+- 점수 차이가 가장 클 때 가장 작은 점수를 얻은 경우를 정답에 넣어야함을 고려
+"""
