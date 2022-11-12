@@ -18,3 +18,10 @@ def solution(alp, cop, problems):
                 dp[na][nc] = min(dp[na][nc], dp[ia][ic] + cost)
                 
     return dp[a][c]
+
+"""
+- dynamic programming, backpack
+- 하나의 상태가 기존의 다른 상태들의 점화식으로 표현되기 때문에 DP 문제이다.
+- 상태가 두 개의 정수인 요소의 조합으로 표현될 수 있으므로 백팩 문제이다.
+- 목표점수가 현재점수보다 낮은 경우를 고려하여 경계조건을 적절히 설정해야함.
+"""
