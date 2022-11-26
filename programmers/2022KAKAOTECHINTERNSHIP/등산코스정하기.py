@@ -3,38 +3,38 @@ import heapq
 MAX_INT = (1 << 63) - 1
 
 def solution(n, paths, gates, summits):
-    s_set = set(summits)
+    summits_set = set(summits)
     
-    G = [[] for _ in range(n+1)]
-    for a, b, c in paths:
-        G[a].append((b, c))
-        G[b].append((a, c))
+    graph = [[] for _ in range(n+1)]
+    for curr, nxt, cost in paths:
+        graph[curr].append((nxt, cost))
+        graph[nxt].append((curr, cost))
 
-    v = [False for _ in range(n+1)]
-    q = []
-    for g in gates:
-        for b, c in G[g]:
-            heapq.heappush(q, (c, g, b))
-        v[g] = True
+    visited = [False for _ in range(n+1)]
+    queue = []
+    for gate in gates:
+        for nxt, cost in graph[gate]:
+            heapq.heappush(queue, (cost, gate, nxt))
+        visited[gate] = True
 
-    ans = [MAX_INT, MAX_INT]
+    answer = [MAX_INT, MAX_INT]
     intensity = 0
     
-    while q:
-        c, a, b = heapq.heappop(q)
-        if v[b]: continue
+    while queue:
+        cost, curr, nxt = heapq.heappop(queue)
+        if visited[nxt]: continue
         
-        if a in s_set: continue
-        if c > intensity: intensity = c
-        if intensity > ans[1]: break
-        if b in s_set and b < ans[0]: ans = [b, intensity]
+        if curr in summits_set: continue
+        if cost > intensity: intensity = cost
+        if intensity > answer[1]: break
+        if nxt in summits_set and nxt < answer[0]: answer = [nxt, intensity]
         
-        v[b] = True
-        for bb, cc in G[b]:
-            if v[bb]: continue
-            heapq.heappush(q, (cc, b, bb))
+        visited[nxt] = True
+        for nxtnxt, nextcost in graph[nxt]:
+            if visited[nxtnxt]: continue
+            heapq.heappush(queue, (nextcost, nxt, nxtnxt))
     
-    return ans
+    return answer
 
 """
 - BFS, prim
